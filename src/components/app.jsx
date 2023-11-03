@@ -6,6 +6,7 @@ import HomePage from "../pages";
 import About from "../pages/about";
 import Form from "../pages/form";
 import User from "../pages/user";
+import TradePage from "../pages/trade";
 
 const MyApp = () => {
   return (
@@ -14,10 +15,11 @@ const MyApp = () => {
         <SnackbarProvider>
           <ZMPRouter>
             <AnimationRoutes>
-              <Route path="/" element={<HomePage></HomePage>}></Route>
+              <Route path="/" element={<TradePage></TradePage>}></Route>
               <Route path="/about" element={<About></About>}></Route>
               <Route path="/form" element={<Form></Form>}></Route>
               <Route path="/user" element={<User></User>}></Route>
+              <Route path="/trade" element={<TradePage></TradePage>}></Route>
             </AnimationRoutes>
           </ZMPRouter>
         </SnackbarProvider>
